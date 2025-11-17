@@ -38,7 +38,7 @@ try {
     jobs.forEach((job) =>{
         output += `
         <div class="job-card">
-        <img src="${job.employer_logo}" alt="">
+        <img src="${job.employer_logo || 'default.png'}" alt="">
                     <h3>${job.job_title}</h3>
 
                     <p><strong>Company:</strong>${job.employer_name}</p>
@@ -48,14 +48,15 @@ try {
                     </p>
 
                     <p><strong>Posted at :</strong>
-                     ${job.job_posted_at}, 
+                     ${job.job_posted_at} 
                     </p> 
 
                     <p><strong>platform:</strong>${job.job_publisher} </p>
                     <br>
 
                     <p>
-                        <a href="${job.job_apply_link}" target="_blank">Apply Here</a>
+                        <a href="${job.job_apply_link || '#'}" target="_blank">Apply Here</a>
+
                     </p>
         </div>
         `

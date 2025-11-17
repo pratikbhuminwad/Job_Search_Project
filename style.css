@@ -21,6 +21,9 @@ body {
 
 .search {
   text-align: center;
+  background-color: rgb(244, 164, 59);
+  margin: 0 40%;
+  border-radius: 10px;
 }
 
 #job-result {
