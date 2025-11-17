@@ -54,7 +54,7 @@ try {
                     <p><strong>platform:</strong>${job.job_publisher} </p>
                     <br>
 
-                    </p>
+                    <p>
                         <a href="${job.job_apply_link}" target="_blank">Apply Here</a>
                     </p>
         </div>
