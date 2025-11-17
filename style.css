@@ -1,0 +1,81 @@
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#loading {
+  display: none;
+  font-weight: 800;
+}
+
+.container {
+  text-align: center;
+  border: 1px solid black;
+  padding: 30px;
+  margin: 0 30%;
+  background-color: aqua;
+  border-radius: 10px;
+}
+
+.search {
+  text-align: center;
+}
+
+#job-result {
+  background-color: greenyellow;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+
+#display-result {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards */
+  gap: 20px;
+  margin-top: 30px;
+}
+
+
+.job-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.job-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.job-card h3 {
+  margin: 10px 0;
+}
+
+.job-card p {
+  margin: 5px 0;
+}
+
+.job-card a {
+  background: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+@media (max-width: 900px) {
+  #display-result {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  #display-result {
+    grid-template-columns: 1fr;
+  }
+}
